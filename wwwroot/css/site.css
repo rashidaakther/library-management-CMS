@@ -1,29 +1,355 @@
+#carouselHero .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 22rem;
+    overflow: hidden;
+}
+
+.right.carousel-control, .left.carousel-control {
+    display: none;
+}
+
+.card-img {
+    object-fit: cover;
+    object-position: center;
+    height: 12rem;
+    overflow: hidden;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: fit-content;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.search {
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 5px
+}
+
+.search-1 {
+    position: relative;
+    width: 100%
+}
+
+    .search-1 input {
+        height: 45px;
+        border: none;
+        width: 100%;
+        padding-left: 34px;
+        padding-right: 10px;
+        border-right: 2px solid #eee
+    }
+
+        .search-1 input:focus {
+            border-color: none;
+            box-shadow: none;
+            outline: none
+        }
+
+    .search-1 i {
+        position: absolute;
+        top: 12px;
+        left: 5px;
+        font-size: 24px;
+        color: #eee
+    }
+
+::placeholder {
+    color: #eee;
+    opacity: 1
+}
+
+.search-2 {
+    position: relative;
+    width: 100%
+}
+
+    .search-2 input {
+        height: 45px;
+        border: none;
+        width: 100%;
+        padding-left: 18px;
+        padding-right: 100px
+    }
+
+        .search-2 input:focus {
+            border-color: none;
+            box-shadow: none;
+            outline: none
+        }
+
+    .search-2 i {
+        position: absolute;
+        top: 12px;
+        left: -10px;
+        font-size: 24px;
+        color: #eee
+    }
+
+    .search-2 button {
+        position: absolute;
+        right: 1px;
+        top: 0px;
+        border: none;
+        height: 45px;
+        background-color: red;
+        color: #fff;
+        width: 90px;
+        border-radius: 4px
+    }
+
+@media (max-width:800px) {
+    .search-1 input {
+        border-right: none;
+        border-bottom: 1px solid #eee
+    }
+
+    .search-2 i {
+        left: 4px
+    }
+
+    .search-2 input {
+        padding-left: 34px
+    }
+
+    .search-2 button {
+        height: 37px;
+        top: 5px
+    }
+}
+
+///////////////////////////////////////////////////////
+.advanced {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.advanced {
+    color: #00838f !important;
+}
+
+.col {
+    overflow-wrap: break-word;
+}
+
+/*Book Index cover images*/
+.profilepic {
+    width: 3rem;
+    height: 5rem;
+    align-self: center;
+    margin: -0.1rem 1.2rem 0 -0.2rem;
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: #111;
+}
+
+    .profilepic:hover .profilepic__content {
+        opacity: 1;
+    }
+
+    .profilepic:hover .profilepic__image {
+        opacity: .5;
+    }
+
+.profilepic__image {
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.profilepic__content {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.profilepic__icon {
+    color: white;
+    padding-bottom: 8px;
+}
+
+.fas {
+    font-size: 20px;
+}
+
+.profilepic__text {
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 50%;
+    text-align: center;
+}
+
+/*Book detail large image*/
+.largepic {
+    align-self: center;
+    margin: -0.1rem 1.2rem 0 -0.2rem;
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: #111;
+}
+
+    .largepic:hover .largepic__content {
+        opacity: 1;
+    }
+
+    .largepic:hover .largepic__image {
+        opacity: .5;
+    }
+
+.largepic__image {
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.largepic__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+/*--------------------------*/
+.icon-circle.icon-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+
+.rounded-circle {
+    border-radius: 50% !important
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+.border-top {
+    border-top: 1px solid #e5e5e5;
 }
 
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
-.sileder-section {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/homepage_background.png);
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.parallax {
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: -5px 7px 23px -9px rgba(0,0,0,0.75);
+}
+
+
+.noparallax {
+    background-color: white;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.noparallax-footer {
+    background-color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main.pb-3 {
+    background: #F4F4F4;
+}
+
+footer.border-top.footer.text-muted {
+    background: #F4F4F4;
 }
